@@ -1,8 +1,7 @@
 package com.array;
 
 public class MajorityElement {
-    public static int findCandidate(int[] nums) {
-
+    private static int findCandidate(int[] nums) {
        // Finding the majority Candidate
         int i, count = 0, currentElement = 0;
         for (i = 0; i < nums.length; i++)
@@ -34,13 +33,13 @@ public class MajorityElement {
                 count++;
         }
 
-        if ( count > (array.length/3))
+        if ( count > (array.length/2))
             return candidate;
 
         return -1;
     }
 
-    public static int majorityElement(int[] array)
+    private static int majorityElement(int[] array)
     {
         int candidate = findCandidate( array );
         int majorityElement = verifyCandidate(array, candidate);
