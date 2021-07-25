@@ -2,7 +2,6 @@ package com.array;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class MajorityElement2 {
     public static List <Integer> majorityElement(int[] nums) {
